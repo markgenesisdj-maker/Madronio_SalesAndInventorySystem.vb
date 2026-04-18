@@ -23,6 +23,7 @@ Partial Class frmLogin
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        Label5 = New Label()
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
@@ -32,7 +33,6 @@ Partial Class frmLogin
         Button1 = New Button()
         Button2 = New Button()
         Button3 = New Button()
-        Label5 = New Label()
         CheckBox1 = New CheckBox()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -46,6 +46,17 @@ Partial Class frmLogin
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(500, 65)
         Panel1.TabIndex = 0
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.ForeColor = SystemColors.ButtonHighlight
+        Label5.Location = New Point(12, 14)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(165, 32)
+        Label5.TabIndex = 1
+        Label5.Text = "System Login"
         ' 
         ' Label1
         ' 
@@ -72,7 +83,7 @@ Partial Class frmLogin
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.Location = New Point(45, 164)
+        Label3.Location = New Point(37, 164)
         Label3.Name = "Label3"
         Label3.Size = New Size(83, 20)
         Label3.TabIndex = 1
@@ -81,7 +92,7 @@ Partial Class frmLogin
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Location = New Point(45, 232)
+        Label4.Location = New Point(35, 232)
         Label4.Name = "Label4"
         Label4.Size = New Size(76, 21)
         Label4.TabIndex = 1
@@ -132,17 +143,6 @@ Partial Class frmLogin
         Button3.Text = "Exit"
         Button3.UseVisualStyleBackColor = True
         ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.ForeColor = SystemColors.ButtonHighlight
-        Label5.Location = New Point(12, 14)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(165, 32)
-        Label5.TabIndex = 1
-        Label5.Text = "System Login"
-        ' 
         ' CheckBox1
         ' 
         CheckBox1.AutoSize = True
@@ -157,6 +157,7 @@ Partial Class frmLogin
         ' 
         AutoScaleDimensions = New SizeF(9F, 21F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.WhiteSmoke
         ClientSize = New Size(500, 400)
         Controls.Add(CheckBox1)
         Controls.Add(Button3)
@@ -171,7 +172,7 @@ Partial Class frmLogin
         Controls.Add(Panel1)
         Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         FormBorderStyle = FormBorderStyle.None
-        Margin = New Padding(4, 4, 4, 4)
+        Margin = New Padding(4)
         Name = "frmLogin"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Form1"
