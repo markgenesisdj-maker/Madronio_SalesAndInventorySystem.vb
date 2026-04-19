@@ -25,6 +25,7 @@ Partial Class frmAdmin
         Label2 = New Label()
         Label1 = New Label()
         Panel1 = New Panel()
+        Label12 = New Label()
         BTNLOGOUT = New Button()
         BTNSETTINGS = New Button()
         BTNSALES = New Button()
@@ -37,6 +38,8 @@ Partial Class frmAdmin
         LBLTYPE = New Label()
         LBLNAME = New Label()
         Label3 = New Label()
+        Label10 = New Label()
+        Label11 = New Label()
         Panel2 = New Panel()
         Label6 = New Label()
         Label4 = New Label()
@@ -47,9 +50,6 @@ Partial Class frmAdmin
         LBLPAGE = New Label()
         Label9 = New Label()
         PNLMAIN = New Panel()
-        Label10 = New Label()
-        Label11 = New Label()
-        Label12 = New Label()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -102,6 +102,18 @@ Partial Class frmAdmin
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(233, 786)
         Panel1.TabIndex = 4
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.BackColor = Color.Transparent
+        Label12.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.ForeColor = SystemColors.ControlLight
+        Label12.Location = New Point(-15, 712)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(258, 17)
+        Label12.TabIndex = 7
+        Label12.Text = "__________________________________________________"
         ' 
         ' BTNLOGOUT
         ' 
@@ -314,6 +326,30 @@ Partial Class frmAdmin
         Label3.TabIndex = 2
         Label3.Text = "Loged in as:"
         ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.BackColor = Color.Transparent
+        Label10.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.ForeColor = SystemColors.ControlLight
+        Label10.Location = New Point(-12, 63)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(258, 17)
+        Label10.TabIndex = 5
+        Label10.Text = "__________________________________________________"
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.BackColor = Color.Transparent
+        Label11.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label11.ForeColor = SystemColors.ControlLight
+        Label11.Location = New Point(-15, 137)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(258, 17)
+        Label11.TabIndex = 6
+        Label11.Text = "__________________________________________________"
+        ' 
         ' Panel2
         ' 
         Panel2.BackColor = Color.RoyalBlue
@@ -423,42 +459,6 @@ Partial Class frmAdmin
         PNLMAIN.Name = "PNLMAIN"
         PNLMAIN.Size = New Size(1016, 636)
         PNLMAIN.TabIndex = 8
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.BackColor = Color.Transparent
-        Label10.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.ForeColor = SystemColors.ControlLight
-        Label10.Location = New Point(-12, 63)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(258, 17)
-        Label10.TabIndex = 5
-        Label10.Text = "__________________________________________________"
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.BackColor = Color.Transparent
-        Label11.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.ForeColor = SystemColors.ControlLight
-        Label11.Location = New Point(-15, 137)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(258, 17)
-        Label11.TabIndex = 6
-        Label11.Text = "__________________________________________________"
-        ' 
-        ' Label12
-        ' 
-        Label12.AutoSize = True
-        Label12.BackColor = Color.Transparent
-        Label12.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.ForeColor = SystemColors.ControlLight
-        Label12.Location = New Point(-15, 712)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(258, 17)
-        Label12.TabIndex = 7
-        Label12.Text = "__________________________________________________"
         ' 
         ' frmAdmin
         ' 

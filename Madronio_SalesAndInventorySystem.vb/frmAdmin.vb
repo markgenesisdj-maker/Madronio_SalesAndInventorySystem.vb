@@ -1,13 +1,18 @@
 ﻿Public Class frmAdmin
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BTNDASHBOARD.Click, BTNUSER.Click, BTNPRODUCTS.Click, BTNADDSTOCKS.Click, BTNCUSTOMERPROF.Click, BTNSALES.Click, BTNREPORTS.Click, BTNSETTINGS.Click, BTNLOGOUT.Click
+    Private Sub BTNDASHBOARD_Click(sender As Object, e As EventArgs) Handles BTNDASHBOARD.Click
 
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click, Label8.Click, Label9.Click, LBLPAGE.Click
-
+    Private Sub BTNLOGOUT_Click(sender As Object, e As EventArgs) Handles BTNLOGOUT.Click
+        frmLogin.Show()
+        Me.Close()
     End Sub
 
-    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles PNLMAIN.Paint
-
+    Private Sub BTNUSER_Click(sender As Object, e As EventArgs) Handles BTNUSER.Click
+        PNLMAIN.Controls.Clear()
+        Dim useraccount As New UCUserMngm()
+        useraccount.Parent = PNLMAIN
+        useraccount.Show()
+        useraccount.Dock = DockStyle.Fill
     End Sub
 End Class
