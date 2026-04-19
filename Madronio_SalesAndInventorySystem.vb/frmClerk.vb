@@ -1,3 +1,3 @@
-﻿Module frmClerk
+﻿Public Class frmClerk
 
-End Module
+End Class

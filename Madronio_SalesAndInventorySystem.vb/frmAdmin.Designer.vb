@@ -42,9 +42,9 @@ Partial Class frmAdmin
         Label11 = New Label()
         Panel2 = New Panel()
         Label6 = New Label()
-        Label4 = New Label()
+        LBLTYPE2 = New Label()
         Label5 = New Label()
-        Label7 = New Label()
+        LBLNAME2 = New Label()
         Label8 = New Label()
         Panel3 = New Panel()
         LBLPAGE = New Label()
@@ -354,9 +354,9 @@ Partial Class frmAdmin
         ' 
         Panel2.BackColor = Color.RoyalBlue
         Panel2.Controls.Add(Label6)
-        Panel2.Controls.Add(Label4)
+        Panel2.Controls.Add(LBLTYPE2)
         Panel2.Controls.Add(Label5)
-        Panel2.Controls.Add(Label7)
+        Panel2.Controls.Add(LBLNAME2)
         Panel2.Controls.Add(Label8)
         Panel2.Dock = DockStyle.Top
         Panel2.Location = New Point(233, 0)
@@ -375,16 +375,16 @@ Partial Class frmAdmin
         Label6.TabIndex = 4
         Label6.Text = "|"
         ' 
-        ' Label4
+        ' LBLTYPE2
         ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = Color.White
-        Label4.Location = New Point(987, 29)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(48, 17)
-        Label4.TabIndex = 3
-        Label4.Text = "Admin"
+        LBLTYPE2.AutoSize = True
+        LBLTYPE2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LBLTYPE2.ForeColor = Color.White
+        LBLTYPE2.Location = New Point(987, 29)
+        LBLTYPE2.Name = "LBLTYPE2"
+        LBLTYPE2.Size = New Size(48, 17)
+        LBLTYPE2.TabIndex = 3
+        LBLTYPE2.Text = "Admin"
         ' 
         ' Label5
         ' 
@@ -397,16 +397,16 @@ Partial Class frmAdmin
         Label5.TabIndex = 1
         Label5.Text = "MADRONIO GROCERY STORE"
         ' 
-        ' Label7
+        ' LBLNAME2
         ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.ForeColor = Color.White
-        Label7.Location = New Point(875, 30)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(92, 17)
-        Label7.TabIndex = 2
-        Label7.Text = "Administrator"
+        LBLNAME2.AutoSize = True
+        LBLNAME2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LBLNAME2.ForeColor = Color.White
+        LBLNAME2.Location = New Point(875, 30)
+        LBLNAME2.Name = "LBLNAME2"
+        LBLNAME2.Size = New Size(92, 17)
+        LBLNAME2.TabIndex = 2
+        LBLNAME2.Text = "Administrator"
         ' 
         ' Label8
         ' 
@@ -501,13 +501,13 @@ Partial Class frmAdmin
     Friend WithEvents BTNUSER As Button
     Friend WithEvents BTNADDSTOCKS As Button
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label7 As Label
+    Friend WithEvents LBLNAME2 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents LBLPAGE As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents PNLMAIN As Panel
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents LBLTYPE2 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label

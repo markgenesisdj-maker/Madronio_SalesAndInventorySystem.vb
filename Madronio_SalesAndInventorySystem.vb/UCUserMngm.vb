@@ -1,8 +1,14 @@
 ﻿Public Class UCUserMngm
     Private Sub UCUserMngm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        FUNCTION_REFRESH()
         frmAdmin.LBLPAGE.Text = "User Management"
         TXTLOGIN.Focus()
+
+        CBUSERTYPE.Items.Clear()
+        CBUSERTYPE.Items.Add("Admin")
+        CBUSERTYPE.Items.Add("Cashier")
+        CBUSERTYPE.Items.Add("Staff")
+
+        FUNCTION_REFRESH()
     End Sub
 
     Private Sub FUNCTION_ENABLED()
@@ -160,5 +166,9 @@
                 e.Value = New String("*"c, e.Value.ToString().Length)
             End If
         End If
+    End Sub
+
+    Private Sub CBUSERTYPE_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CBUSERTYPE.SelectedIndexChanged
+
     End Sub
 End Class

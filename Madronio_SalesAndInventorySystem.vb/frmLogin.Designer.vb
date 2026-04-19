@@ -105,7 +105,7 @@ Partial Class frmLogin
         TXTUN.Location = New Point(38, 191)
         TXTUN.Name = "TXTUN"
         TXTUN.Size = New Size(414, 29)
-        TXTUN.TabIndex = 2
+        TXTUN.TabIndex = 1
         TXTUN.Text = "Enter Username"
         ' 
         ' TXTPW
@@ -123,7 +123,7 @@ Partial Class frmLogin
         BTNLOGIN.Location = New Point(35, 342)
         BTNLOGIN.Name = "BTNLOGIN"
         BTNLOGIN.Size = New Size(123, 46)
-        BTNLOGIN.TabIndex = 3
+        BTNLOGIN.TabIndex = 4
         BTNLOGIN.Text = "Login"
         BTNLOGIN.UseVisualStyleBackColor = True
         ' 
@@ -133,7 +133,7 @@ Partial Class frmLogin
         BTNCLEAR.Location = New Point(181, 342)
         BTNCLEAR.Name = "BTNCLEAR"
         BTNCLEAR.Size = New Size(123, 46)
-        BTNCLEAR.TabIndex = 3
+        BTNCLEAR.TabIndex = 5
         BTNCLEAR.Text = "Clear"
         BTNCLEAR.UseVisualStyleBackColor = True
         ' 
@@ -143,7 +143,7 @@ Partial Class frmLogin
         BTNEXIT.Location = New Point(327, 342)
         BTNEXIT.Name = "BTNEXIT"
         BTNEXIT.Size = New Size(123, 46)
-        BTNEXIT.TabIndex = 3
+        BTNEXIT.TabIndex = 6
         BTNEXIT.Text = "Exit"
         BTNEXIT.UseVisualStyleBackColor = True
         ' 
@@ -154,7 +154,7 @@ Partial Class frmLogin
         CHKSHOWPW.Location = New Point(41, 291)
         CHKSHOWPW.Name = "CHKSHOWPW"
         CHKSHOWPW.Size = New Size(154, 24)
-        CHKSHOWPW.TabIndex = 4
+        CHKSHOWPW.TabIndex = 3
         CHKSHOWPW.Text = "Show Password"
         CHKSHOWPW.UseVisualStyleBackColor = True
         ' 

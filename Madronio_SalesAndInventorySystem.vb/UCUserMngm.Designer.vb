@@ -82,6 +82,7 @@ Partial Class UCUserMngm
         ' 
         ' CBUSERTYPE
         ' 
+        CBUSERTYPE.Enabled = False
         CBUSERTYPE.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         CBUSERTYPE.ForeColor = Color.DimGray
         CBUSERTYPE.FormattingEnabled = True
@@ -168,6 +169,7 @@ Partial Class UCUserMngm
         ' 
         TXTCONFIRMPW.BackColor = Color.WhiteSmoke
         TXTCONFIRMPW.BorderStyle = BorderStyle.FixedSingle
+        TXTCONFIRMPW.Enabled = False
         TXTCONFIRMPW.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TXTCONFIRMPW.ForeColor = Color.DimGray
         TXTCONFIRMPW.Location = New Point(38, 243)
@@ -190,6 +192,7 @@ Partial Class UCUserMngm
         ' 
         TXTPASSWORD.BackColor = Color.WhiteSmoke
         TXTPASSWORD.BorderStyle = BorderStyle.FixedSingle
+        TXTPASSWORD.Enabled = False
         TXTPASSWORD.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TXTPASSWORD.ForeColor = Color.DimGray
         TXTPASSWORD.Location = New Point(38, 174)
@@ -222,6 +225,7 @@ Partial Class UCUserMngm
         ' 
         TXTLOGIN.BackColor = Color.WhiteSmoke
         TXTLOGIN.BorderStyle = BorderStyle.FixedSingle
+        TXTLOGIN.Enabled = False
         TXTLOGIN.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TXTLOGIN.ForeColor = Color.DimGray
         TXTLOGIN.Location = New Point(517, 110)
@@ -243,6 +247,7 @@ Partial Class UCUserMngm
         ' 
         TXTUNAME.BackColor = Color.WhiteSmoke
         TXTUNAME.BorderStyle = BorderStyle.FixedSingle
+        TXTUNAME.Enabled = False
         TXTUNAME.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         TXTUNAME.ForeColor = Color.DimGray
         TXTUNAME.Location = New Point(38, 110)
