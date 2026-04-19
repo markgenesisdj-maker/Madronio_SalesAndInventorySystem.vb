@@ -28,12 +28,12 @@ Partial Class frmLogin
         Label2 = New Label()
         Label3 = New Label()
         Label4 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        CheckBox1 = New CheckBox()
+        TXTUN = New TextBox()
+        TXTPW = New TextBox()
+        BTNLOGIN = New Button()
+        BTNCLEAR = New Button()
+        BTNEXIT = New Button()
+        CHKSHOWPW = New CheckBox()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -63,7 +63,7 @@ Partial Class frmLogin
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.RoyalBlue
-        Label1.Location = New Point(90, 95)
+        Label1.Location = New Point(89, 95)
         Label1.Name = "Label1"
         Label1.Size = New Size(305, 30)
         Label1.TabIndex = 1
@@ -73,7 +73,7 @@ Partial Class frmLogin
         ' 
         Label2.AutoSize = True
         Label2.ForeColor = Color.DimGray
-        Label2.Location = New Point(91, 125)
+        Label2.Location = New Point(138, 121)
         Label2.Name = "Label2"
         Label2.Size = New Size(201, 21)
         Label2.TabIndex = 1
@@ -82,76 +82,81 @@ Partial Class frmLogin
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
         Label3.Location = New Point(37, 164)
         Label3.Name = "Label3"
-        Label3.Size = New Size(83, 20)
+        Label3.Size = New Size(91, 20)
         Label3.TabIndex = 1
         Label3.Text = "Username"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
         Label4.Location = New Point(35, 227)
         Label4.Name = "Label4"
-        Label4.Size = New Size(76, 21)
+        Label4.Size = New Size(86, 20)
         Label4.TabIndex = 1
         Label4.Text = "Password"
         ' 
-        ' TextBox1
+        ' TXTUN
         ' 
-        TextBox1.ForeColor = Color.DimGray
-        TextBox1.Location = New Point(38, 191)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(414, 29)
-        TextBox1.TabIndex = 2
-        TextBox1.Text = "Enter Username"
+        TXTUN.ForeColor = Color.DimGray
+        TXTUN.Location = New Point(38, 191)
+        TXTUN.Name = "TXTUN"
+        TXTUN.Size = New Size(414, 29)
+        TXTUN.TabIndex = 2
+        TXTUN.Text = "Enter Username"
         ' 
-        ' TextBox2
+        ' TXTPW
         ' 
-        TextBox2.ForeColor = Color.DimGray
-        TextBox2.Location = New Point(38, 255)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(414, 29)
-        TextBox2.TabIndex = 2
-        TextBox2.Text = "Enter Password"
+        TXTPW.ForeColor = Color.DimGray
+        TXTPW.Location = New Point(38, 255)
+        TXTPW.Name = "TXTPW"
+        TXTPW.Size = New Size(414, 29)
+        TXTPW.TabIndex = 2
+        TXTPW.Text = "Enter Password"
         ' 
-        ' Button1
+        ' BTNLOGIN
         ' 
-        Button1.Location = New Point(35, 342)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(123, 46)
-        Button1.TabIndex = 3
-        Button1.Text = "Login"
-        Button1.UseVisualStyleBackColor = True
+        BTNLOGIN.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        BTNLOGIN.Location = New Point(35, 342)
+        BTNLOGIN.Name = "BTNLOGIN"
+        BTNLOGIN.Size = New Size(123, 46)
+        BTNLOGIN.TabIndex = 3
+        BTNLOGIN.Text = "Login"
+        BTNLOGIN.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' BTNCLEAR
         ' 
-        Button2.Location = New Point(181, 342)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(123, 46)
-        Button2.TabIndex = 3
-        Button2.Text = "Clear"
-        Button2.UseVisualStyleBackColor = True
+        BTNCLEAR.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        BTNCLEAR.Location = New Point(181, 342)
+        BTNCLEAR.Name = "BTNCLEAR"
+        BTNCLEAR.Size = New Size(123, 46)
+        BTNCLEAR.TabIndex = 3
+        BTNCLEAR.Text = "Clear"
+        BTNCLEAR.UseVisualStyleBackColor = True
         ' 
-        ' Button3
+        ' BTNEXIT
         ' 
-        Button3.Location = New Point(327, 342)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(123, 46)
-        Button3.TabIndex = 3
-        Button3.Text = "Exit"
-        Button3.UseVisualStyleBackColor = True
+        BTNEXIT.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        BTNEXIT.Location = New Point(327, 342)
+        BTNEXIT.Name = "BTNEXIT"
+        BTNEXIT.Size = New Size(123, 46)
+        BTNEXIT.TabIndex = 3
+        BTNEXIT.Text = "Exit"
+        BTNEXIT.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox1
+        ' CHKSHOWPW
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(41, 291)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(138, 25)
-        CheckBox1.TabIndex = 4
-        CheckBox1.Text = "Show Password"
-        CheckBox1.UseVisualStyleBackColor = True
+        CHKSHOWPW.AutoSize = True
+        CHKSHOWPW.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        CHKSHOWPW.Location = New Point(41, 291)
+        CHKSHOWPW.Name = "CHKSHOWPW"
+        CHKSHOWPW.Size = New Size(154, 24)
+        CHKSHOWPW.TabIndex = 4
+        CHKSHOWPW.Text = "Show Password"
+        CHKSHOWPW.UseVisualStyleBackColor = True
         ' 
         ' frmLogin
         ' 
@@ -159,12 +164,12 @@ Partial Class frmLogin
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.WhiteSmoke
         ClientSize = New Size(500, 400)
-        Controls.Add(CheckBox1)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(CHKSHOWPW)
+        Controls.Add(BTNEXIT)
+        Controls.Add(BTNCLEAR)
+        Controls.Add(BTNLOGIN)
+        Controls.Add(TXTPW)
+        Controls.Add(TXTUN)
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label2)
@@ -188,11 +193,11 @@ Partial Class frmLogin
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents TXTUN As TextBox
+    Friend WithEvents TXTPW As TextBox
+    Friend WithEvents BTNLOGIN As Button
+    Friend WithEvents BTNCLEAR As Button
+    Friend WithEvents BTNEXIT As Button
+    Friend WithEvents CHKSHOWPW As CheckBox
 
 End Class

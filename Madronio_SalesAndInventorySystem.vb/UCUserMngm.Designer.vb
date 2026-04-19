@@ -24,29 +24,29 @@ Partial Class UCUserMngm
     Private Sub InitializeComponent()
         Panel1 = New Panel()
         Panel2 = New Panel()
-        Panel3 = New Panel()
+        CBUSERTYPE = New ComboBox()
+        BTNCANCEL = New Button()
+        BTNDELETE = New Button()
+        BTNEDIT = New Button()
+        BTNSAVE = New Button()
+        BTNADD = New Button()
+        TXTCONFIRMPW = New TextBox()
+        Label2 = New Label()
+        TXTPASSWORD = New TextBox()
+        Label6 = New Label()
+        Label1 = New Label()
+        TextBox4 = New TextBox()
+        Label4 = New Label()
+        TXTUNAME = New TextBox()
+        Label3 = New Label()
         Panel4 = New Panel()
         Label5 = New Label()
-        TextBox1 = New TextBox()
-        Label3 = New Label()
-        Label1 = New Label()
-        TextBox2 = New TextBox()
-        Label2 = New Label()
-        TextBox3 = New TextBox()
-        Label4 = New Label()
-        TextBox4 = New TextBox()
-        Label6 = New Label()
-        Button1 = New Button()
-        Button2 = New Button()
-        Button3 = New Button()
-        Button4 = New Button()
-        Button5 = New Button()
-        DataGridView1 = New DataGridView()
-        ComboBox1 = New ComboBox()
+        Panel3 = New Panel()
+        DGVUSERACCOUNT = New DataGridView()
         Panel2.SuspendLayout()
-        Panel3.SuspendLayout()
         Panel4.SuspendLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel3.SuspendLayout()
+        CType(DGVUSERACCOUNT, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -59,20 +59,20 @@ Partial Class UCUserMngm
         ' Panel2
         ' 
         Panel2.BackColor = Color.White
-        Panel2.Controls.Add(ComboBox1)
-        Panel2.Controls.Add(Button5)
-        Panel2.Controls.Add(Button4)
-        Panel2.Controls.Add(Button3)
-        Panel2.Controls.Add(Button2)
-        Panel2.Controls.Add(Button1)
-        Panel2.Controls.Add(TextBox3)
+        Panel2.Controls.Add(CBUSERTYPE)
+        Panel2.Controls.Add(BTNCANCEL)
+        Panel2.Controls.Add(BTNDELETE)
+        Panel2.Controls.Add(BTNEDIT)
+        Panel2.Controls.Add(BTNSAVE)
+        Panel2.Controls.Add(BTNADD)
+        Panel2.Controls.Add(TXTCONFIRMPW)
         Panel2.Controls.Add(Label2)
-        Panel2.Controls.Add(TextBox2)
+        Panel2.Controls.Add(TXTPASSWORD)
         Panel2.Controls.Add(Label6)
         Panel2.Controls.Add(Label1)
         Panel2.Controls.Add(TextBox4)
         Panel2.Controls.Add(Label4)
-        Panel2.Controls.Add(TextBox1)
+        Panel2.Controls.Add(TXTUNAME)
         Panel2.Controls.Add(Label3)
         Panel2.Controls.Add(Panel4)
         Panel2.Location = New Point(14, 14)
@@ -80,14 +80,181 @@ Partial Class UCUserMngm
         Panel2.Size = New Size(985, 370)
         Panel2.TabIndex = 0
         ' 
-        ' Panel3
+        ' CBUSERTYPE
         ' 
-        Panel3.BackColor = Color.White
-        Panel3.Controls.Add(DataGridView1)
-        Panel3.Location = New Point(14, 399)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(985, 215)
-        Panel3.TabIndex = 0
+        CBUSERTYPE.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        CBUSERTYPE.ForeColor = Color.DimGray
+        CBUSERTYPE.FormattingEnabled = True
+        CBUSERTYPE.Location = New Point(517, 174)
+        CBUSERTYPE.Name = "CBUSERTYPE"
+        CBUSERTYPE.Size = New Size(414, 29)
+        CBUSERTYPE.TabIndex = 5
+        ' 
+        ' BTNCANCEL
+        ' 
+        BTNCANCEL.FlatAppearance.BorderColor = Color.DarkGray
+        BTNCANCEL.FlatStyle = FlatStyle.Flat
+        BTNCANCEL.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        BTNCANCEL.Location = New Point(566, 296)
+        BTNCANCEL.Name = "BTNCANCEL"
+        BTNCANCEL.Size = New Size(117, 53)
+        BTNCANCEL.TabIndex = 1
+        BTNCANCEL.Text = "Cancel"
+        BTNCANCEL.UseVisualStyleBackColor = True
+        ' 
+        ' BTNDELETE
+        ' 
+        BTNDELETE.BackColor = Color.Red
+        BTNDELETE.FlatAppearance.BorderSize = 0
+        BTNDELETE.FlatStyle = FlatStyle.Flat
+        BTNDELETE.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        BTNDELETE.ForeColor = Color.White
+        BTNDELETE.Image = My.Resources.Resources.Delete
+        BTNDELETE.Location = New Point(434, 296)
+        BTNDELETE.Name = "BTNDELETE"
+        BTNDELETE.Size = New Size(117, 53)
+        BTNDELETE.TabIndex = 1
+        BTNDELETE.Text = "Delete"
+        BTNDELETE.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNDELETE.UseVisualStyleBackColor = False
+        ' 
+        ' BTNEDIT
+        ' 
+        BTNEDIT.FlatAppearance.BorderColor = Color.DarkGray
+        BTNEDIT.FlatStyle = FlatStyle.Flat
+        BTNEDIT.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        BTNEDIT.Location = New Point(302, 296)
+        BTNEDIT.Name = "BTNEDIT"
+        BTNEDIT.Size = New Size(117, 53)
+        BTNEDIT.TabIndex = 1
+        BTNEDIT.Text = "Edit"
+        BTNEDIT.UseVisualStyleBackColor = True
+        ' 
+        ' BTNSAVE
+        ' 
+        BTNSAVE.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        BTNSAVE.FlatAppearance.BorderSize = 0
+        BTNSAVE.FlatStyle = FlatStyle.Flat
+        BTNSAVE.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        BTNSAVE.ForeColor = Color.White
+        BTNSAVE.Image = My.Resources.Resources.Save
+        BTNSAVE.Location = New Point(170, 296)
+        BTNSAVE.Name = "BTNSAVE"
+        BTNSAVE.Size = New Size(117, 53)
+        BTNSAVE.TabIndex = 1
+        BTNSAVE.Text = "Save"
+        BTNSAVE.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNSAVE.UseVisualStyleBackColor = False
+        ' 
+        ' BTNADD
+        ' 
+        BTNADD.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
+        BTNADD.FlatAppearance.BorderSize = 0
+        BTNADD.FlatStyle = FlatStyle.Flat
+        BTNADD.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        BTNADD.ForeColor = Color.White
+        BTNADD.Image = My.Resources.Resources.Add
+        BTNADD.Location = New Point(38, 296)
+        BTNADD.Name = "BTNADD"
+        BTNADD.Size = New Size(117, 53)
+        BTNADD.TabIndex = 1
+        BTNADD.Text = "Add"
+        BTNADD.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNADD.UseVisualStyleBackColor = False
+        ' 
+        ' TXTCONFIRMPW
+        ' 
+        TXTCONFIRMPW.BackColor = Color.WhiteSmoke
+        TXTCONFIRMPW.BorderStyle = BorderStyle.FixedSingle
+        TXTCONFIRMPW.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TXTCONFIRMPW.ForeColor = Color.DimGray
+        TXTCONFIRMPW.Location = New Point(38, 243)
+        TXTCONFIRMPW.Name = "TXTCONFIRMPW"
+        TXTCONFIRMPW.Size = New Size(414, 29)
+        TXTCONFIRMPW.TabIndex = 4
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        Label2.Location = New Point(34, 220)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(153, 20)
+        Label2.TabIndex = 3
+        Label2.Text = "Confirm Password"
+        ' 
+        ' TXTPASSWORD
+        ' 
+        TXTPASSWORD.BackColor = Color.WhiteSmoke
+        TXTPASSWORD.BorderStyle = BorderStyle.FixedSingle
+        TXTPASSWORD.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TXTPASSWORD.ForeColor = Color.DimGray
+        TXTPASSWORD.Location = New Point(38, 174)
+        TXTPASSWORD.Name = "TXTPASSWORD"
+        TXTPASSWORD.Size = New Size(414, 29)
+        TXTPASSWORD.TabIndex = 4
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        Label6.Location = New Point(514, 151)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(90, 20)
+        Label6.TabIndex = 3
+        Label6.Text = "User Type"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        Label1.Location = New Point(34, 151)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(86, 20)
+        Label1.TabIndex = 3
+        Label1.Text = "Password"
+        ' 
+        ' TextBox4
+        ' 
+        TextBox4.BackColor = Color.WhiteSmoke
+        TextBox4.BorderStyle = BorderStyle.FixedSingle
+        TextBox4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TextBox4.ForeColor = Color.DimGray
+        TextBox4.Location = New Point(517, 110)
+        TextBox4.Name = "TextBox4"
+        TextBox4.Size = New Size(414, 29)
+        TextBox4.TabIndex = 4
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        Label4.Location = New Point(514, 87)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(104, 20)
+        Label4.TabIndex = 3
+        Label4.Text = "Login Name"
+        ' 
+        ' TXTUNAME
+        ' 
+        TXTUNAME.BackColor = Color.WhiteSmoke
+        TXTUNAME.BorderStyle = BorderStyle.FixedSingle
+        TXTUNAME.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TXTUNAME.ForeColor = Color.DimGray
+        TXTUNAME.Location = New Point(38, 110)
+        TXTUNAME.Name = "TXTUNAME"
+        TXTUNAME.Size = New Size(414, 29)
+        TXTUNAME.TabIndex = 4
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
+        Label3.Location = New Point(34, 87)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(91, 20)
+        Label3.TabIndex = 3
+        Label3.Text = "Username"
         ' 
         ' Panel4
         ' 
@@ -110,187 +277,22 @@ Partial Class UCUserMngm
         Label5.TabIndex = 2
         Label5.Text = "User Account Management"
         ' 
-        ' TextBox1
+        ' Panel3
         ' 
-        TextBox1.BackColor = Color.WhiteSmoke
-        TextBox1.BorderStyle = BorderStyle.FixedSingle
-        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox1.ForeColor = Color.DimGray
-        TextBox1.Location = New Point(38, 110)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(414, 29)
-        TextBox1.TabIndex = 4
+        Panel3.BackColor = Color.White
+        Panel3.Controls.Add(DGVUSERACCOUNT)
+        Panel3.Location = New Point(14, 399)
+        Panel3.Name = "Panel3"
+        Panel3.Size = New Size(985, 215)
+        Panel3.TabIndex = 0
         ' 
-        ' Label3
+        ' DGVUSERACCOUNT
         ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        Label3.Location = New Point(34, 87)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(91, 20)
-        Label3.TabIndex = 3
-        Label3.Text = "Username"
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        Label1.Location = New Point(34, 151)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(86, 20)
-        Label1.TabIndex = 3
-        Label1.Text = "Password"
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.BackColor = Color.WhiteSmoke
-        TextBox2.BorderStyle = BorderStyle.FixedSingle
-        TextBox2.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox2.ForeColor = Color.DimGray
-        TextBox2.Location = New Point(38, 174)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(414, 29)
-        TextBox2.TabIndex = 4
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        Label2.Location = New Point(34, 220)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(153, 20)
-        Label2.TabIndex = 3
-        Label2.Text = "Confirm Password"
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.BackColor = Color.WhiteSmoke
-        TextBox3.BorderStyle = BorderStyle.FixedSingle
-        TextBox3.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox3.ForeColor = Color.DimGray
-        TextBox3.Location = New Point(38, 243)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(414, 29)
-        TextBox3.TabIndex = 4
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        Label4.Location = New Point(514, 87)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(104, 20)
-        Label4.TabIndex = 3
-        Label4.Text = "Login Name"
-        ' 
-        ' TextBox4
-        ' 
-        TextBox4.BackColor = Color.WhiteSmoke
-        TextBox4.BorderStyle = BorderStyle.FixedSingle
-        TextBox4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox4.ForeColor = Color.DimGray
-        TextBox4.Location = New Point(517, 110)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(414, 29)
-        TextBox4.TabIndex = 4
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold)
-        Label6.Location = New Point(514, 151)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(90, 20)
-        Label6.TabIndex = 3
-        Label6.Text = "User Type"
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.FromArgb(CByte(128), CByte(128), CByte(255))
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        Button1.ForeColor = Color.White
-        Button1.Image = My.Resources.Resources.Add
-        Button1.Location = New Point(38, 296)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(117, 53)
-        Button1.TabIndex = 1
-        Button1.Text = "Add"
-        Button1.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button1.UseVisualStyleBackColor = False
-        ' 
-        ' Button2
-        ' 
-        Button2.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        Button2.ForeColor = Color.White
-        Button2.Image = My.Resources.Resources.Save
-        Button2.Location = New Point(170, 296)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(117, 53)
-        Button2.TabIndex = 1
-        Button2.Text = "Save"
-        Button2.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button2.UseVisualStyleBackColor = False
-        ' 
-        ' Button3
-        ' 
-        Button3.FlatAppearance.BorderColor = Color.LightGray
-        Button3.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        Button3.Location = New Point(302, 296)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(117, 53)
-        Button3.TabIndex = 1
-        Button3.Text = "Edit"
-        Button3.UseVisualStyleBackColor = True
-        ' 
-        ' Button4
-        ' 
-        Button4.BackColor = Color.Red
-        Button4.FlatAppearance.BorderSize = 0
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        Button4.ForeColor = Color.White
-        Button4.Image = My.Resources.Resources.Delete
-        Button4.Location = New Point(434, 296)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(117, 53)
-        Button4.TabIndex = 1
-        Button4.Text = "Delete"
-        Button4.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button4.UseVisualStyleBackColor = False
-        ' 
-        ' Button5
-        ' 
-        Button5.FlatAppearance.BorderColor = Color.LightGray
-        Button5.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        Button5.Location = New Point(566, 296)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(117, 53)
-        Button5.TabIndex = 1
-        Button5.Text = "Cancel"
-        Button5.UseVisualStyleBackColor = True
-        ' 
-        ' DataGridView1
-        ' 
-        DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(14, 15)
-        DataGridView1.Name = "DataGridView1"
-        DataGridView1.Size = New Size(956, 189)
-        DataGridView1.TabIndex = 0
-        ' 
-        ' ComboBox1
-        ' 
-        ComboBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ComboBox1.ForeColor = Color.DimGray
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(517, 174)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(414, 29)
-        ComboBox1.TabIndex = 5
+        DGVUSERACCOUNT.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DGVUSERACCOUNT.Location = New Point(14, 15)
+        DGVUSERACCOUNT.Name = "DGVUSERACCOUNT"
+        DGVUSERACCOUNT.Size = New Size(956, 189)
+        DGVUSERACCOUNT.TabIndex = 0
         ' 
         ' UCUserMngm
         ' 
@@ -303,10 +305,10 @@ Partial Class UCUserMngm
         Size = New Size(1016, 636)
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
-        Panel3.ResumeLayout(False)
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
-        CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        Panel3.ResumeLayout(False)
+        CType(DGVUSERACCOUNT, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -315,21 +317,21 @@ Partial Class UCUserMngm
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TXTUNAME As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TXTCONFIRMPW As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TXTPASSWORD As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents BTNCANCEL As Button
+    Friend WithEvents BTNDELETE As Button
+    Friend WithEvents BTNEDIT As Button
+    Friend WithEvents BTNSAVE As Button
+    Friend WithEvents BTNADD As Button
+    Friend WithEvents DGVUSERACCOUNT As DataGridView
+    Friend WithEvents CBUSERTYPE As ComboBox
 
 End Class

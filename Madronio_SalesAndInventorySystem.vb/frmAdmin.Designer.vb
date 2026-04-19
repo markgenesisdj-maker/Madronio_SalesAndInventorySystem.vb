@@ -25,26 +25,31 @@ Partial Class frmAdmin
         Label2 = New Label()
         Label1 = New Label()
         Panel1 = New Panel()
-        Button9 = New Button()
-        Button8 = New Button()
-        Button6 = New Button()
-        Button3 = New Button()
-        Button7 = New Button()
-        Button5 = New Button()
-        Button2 = New Button()
-        Button4 = New Button()
-        Button1 = New Button()
-        Label6 = New Label()
-        Label4 = New Label()
+        BTNLOGOUT = New Button()
+        BTNSETTINGS = New Button()
+        BTNSALES = New Button()
+        BTNPRODUCTS = New Button()
+        BTNREPORTS = New Button()
+        BTNCUSTOMERPROF = New Button()
+        BTNUSER = New Button()
+        BTNADDSTOCKS = New Button()
+        BTNDASHBOARD = New Button()
+        LBLTYPE = New Label()
+        LBLNAME = New Label()
         Label3 = New Label()
         Panel2 = New Panel()
+        Label6 = New Label()
+        Label4 = New Label()
         Label5 = New Label()
         Label7 = New Label()
         Label8 = New Label()
         Panel3 = New Panel()
-        Label10 = New Label()
+        LBLPAGE = New Label()
         Label9 = New Label()
-        Panel4 = New Panel()
+        PNLMAIN = New Panel()
+        Label10 = New Label()
+        Label11 = New Label()
+        Label12 = New Label()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel3.SuspendLayout()
@@ -74,226 +79,229 @@ Partial Class frmAdmin
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.DarkSlateBlue
-        Panel1.Controls.Add(Button9)
-        Panel1.Controls.Add(Button8)
-        Panel1.Controls.Add(Button6)
-        Panel1.Controls.Add(Button3)
-        Panel1.Controls.Add(Button7)
-        Panel1.Controls.Add(Button5)
-        Panel1.Controls.Add(Button2)
-        Panel1.Controls.Add(Button4)
-        Panel1.Controls.Add(Button1)
-        Panel1.Controls.Add(Label6)
-        Panel1.Controls.Add(Label4)
+        Panel1.BackColor = Color.Indigo
+        Panel1.Controls.Add(Label12)
+        Panel1.Controls.Add(BTNLOGOUT)
+        Panel1.Controls.Add(BTNSETTINGS)
+        Panel1.Controls.Add(BTNSALES)
+        Panel1.Controls.Add(BTNPRODUCTS)
+        Panel1.Controls.Add(BTNREPORTS)
+        Panel1.Controls.Add(BTNCUSTOMERPROF)
+        Panel1.Controls.Add(BTNUSER)
+        Panel1.Controls.Add(BTNADDSTOCKS)
+        Panel1.Controls.Add(BTNDASHBOARD)
+        Panel1.Controls.Add(LBLTYPE)
+        Panel1.Controls.Add(LBLNAME)
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Label2)
         Panel1.Controls.Add(Label1)
+        Panel1.Controls.Add(Label10)
+        Panel1.Controls.Add(Label11)
         Panel1.Dock = DockStyle.Left
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(233, 786)
         Panel1.TabIndex = 4
         ' 
-        ' Button9
+        ' BTNLOGOUT
         ' 
-        Button9.FlatAppearance.BorderColor = Color.White
-        Button9.FlatAppearance.BorderSize = 0
-        Button9.FlatAppearance.MouseDownBackColor = Color.DarkBlue
-        Button9.FlatStyle = FlatStyle.Flat
-        Button9.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button9.ForeColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
-        Button9.Image = My.Resources.Resources.Logout
-        Button9.ImageAlign = ContentAlignment.MiddleLeft
-        Button9.Location = New Point(-4, 732)
-        Button9.Name = "Button9"
-        Button9.Padding = New Padding(13, 0, 0, 0)
-        Button9.Size = New Size(243, 51)
-        Button9.TabIndex = 4
-        Button9.Text = "Logout"
-        Button9.TextAlign = ContentAlignment.MiddleLeft
-        Button9.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button9.UseVisualStyleBackColor = True
+        BTNLOGOUT.FlatAppearance.BorderColor = Color.White
+        BTNLOGOUT.FlatAppearance.BorderSize = 0
+        BTNLOGOUT.FlatAppearance.MouseDownBackColor = Color.DarkBlue
+        BTNLOGOUT.FlatStyle = FlatStyle.Flat
+        BTNLOGOUT.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BTNLOGOUT.ForeColor = Color.FromArgb(CByte(255), CByte(128), CByte(128))
+        BTNLOGOUT.Image = My.Resources.Resources.Logout
+        BTNLOGOUT.ImageAlign = ContentAlignment.MiddleLeft
+        BTNLOGOUT.Location = New Point(-4, 732)
+        BTNLOGOUT.Name = "BTNLOGOUT"
+        BTNLOGOUT.Padding = New Padding(13, 0, 0, 0)
+        BTNLOGOUT.Size = New Size(243, 51)
+        BTNLOGOUT.TabIndex = 4
+        BTNLOGOUT.Text = "Logout"
+        BTNLOGOUT.TextAlign = ContentAlignment.MiddleLeft
+        BTNLOGOUT.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNLOGOUT.UseVisualStyleBackColor = True
         ' 
-        ' Button8
+        ' BTNSETTINGS
         ' 
-        Button8.FlatAppearance.BorderColor = Color.White
-        Button8.FlatAppearance.BorderSize = 0
-        Button8.FlatAppearance.MouseDownBackColor = Color.DarkBlue
-        Button8.FlatStyle = FlatStyle.Flat
-        Button8.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button8.ForeColor = Color.White
-        Button8.Image = My.Resources.Resources.Settings
-        Button8.ImageAlign = ContentAlignment.MiddleLeft
-        Button8.Location = New Point(-2, 557)
-        Button8.Name = "Button8"
-        Button8.Padding = New Padding(10, 0, 0, 0)
-        Button8.Size = New Size(243, 51)
-        Button8.TabIndex = 4
-        Button8.Text = "Settings"
-        Button8.TextAlign = ContentAlignment.MiddleLeft
-        Button8.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button8.UseVisualStyleBackColor = True
+        BTNSETTINGS.FlatAppearance.BorderColor = Color.White
+        BTNSETTINGS.FlatAppearance.BorderSize = 0
+        BTNSETTINGS.FlatAppearance.MouseDownBackColor = Color.DarkBlue
+        BTNSETTINGS.FlatStyle = FlatStyle.Flat
+        BTNSETTINGS.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BTNSETTINGS.ForeColor = Color.White
+        BTNSETTINGS.Image = My.Resources.Resources.Settings
+        BTNSETTINGS.ImageAlign = ContentAlignment.MiddleLeft
+        BTNSETTINGS.Location = New Point(-2, 566)
+        BTNSETTINGS.Name = "BTNSETTINGS"
+        BTNSETTINGS.Padding = New Padding(10, 0, 0, 0)
+        BTNSETTINGS.Size = New Size(243, 51)
+        BTNSETTINGS.TabIndex = 4
+        BTNSETTINGS.Text = "Settings"
+        BTNSETTINGS.TextAlign = ContentAlignment.MiddleLeft
+        BTNSETTINGS.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNSETTINGS.UseVisualStyleBackColor = True
         ' 
-        ' Button6
+        ' BTNSALES
         ' 
-        Button6.FlatAppearance.BorderColor = Color.White
-        Button6.FlatAppearance.BorderSize = 0
-        Button6.FlatAppearance.MouseDownBackColor = Color.DarkBlue
-        Button6.FlatStyle = FlatStyle.Flat
-        Button6.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button6.ForeColor = Color.White
-        Button6.Image = My.Resources.Resources.Sales_Revenue_Icon
-        Button6.ImageAlign = ContentAlignment.MiddleLeft
-        Button6.Location = New Point(-1, 443)
-        Button6.Name = "Button6"
-        Button6.Padding = New Padding(10, 0, 0, 0)
-        Button6.Size = New Size(243, 51)
-        Button6.TabIndex = 4
-        Button6.Text = "Sales Transaction"
-        Button6.TextAlign = ContentAlignment.MiddleLeft
-        Button6.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button6.UseVisualStyleBackColor = True
+        BTNSALES.FlatAppearance.BorderColor = Color.White
+        BTNSALES.FlatAppearance.BorderSize = 0
+        BTNSALES.FlatAppearance.MouseDownBackColor = Color.DarkBlue
+        BTNSALES.FlatStyle = FlatStyle.Flat
+        BTNSALES.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BTNSALES.ForeColor = Color.White
+        BTNSALES.Image = My.Resources.Resources.Sales_Revenue_Icon
+        BTNSALES.ImageAlign = ContentAlignment.MiddleLeft
+        BTNSALES.Location = New Point(-1, 452)
+        BTNSALES.Name = "BTNSALES"
+        BTNSALES.Padding = New Padding(10, 0, 0, 0)
+        BTNSALES.Size = New Size(243, 51)
+        BTNSALES.TabIndex = 4
+        BTNSALES.Text = "Sales Transaction"
+        BTNSALES.TextAlign = ContentAlignment.MiddleLeft
+        BTNSALES.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNSALES.UseVisualStyleBackColor = True
         ' 
-        ' Button3
+        ' BTNPRODUCTS
         ' 
-        Button3.FlatAppearance.BorderColor = Color.White
-        Button3.FlatAppearance.BorderSize = 0
-        Button3.FlatAppearance.MouseDownBackColor = Color.DarkBlue
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = Color.White
-        Button3.Image = My.Resources.Resources.Products
-        Button3.ImageAlign = ContentAlignment.MiddleLeft
-        Button3.Location = New Point(-1, 272)
-        Button3.Name = "Button3"
-        Button3.Padding = New Padding(10, 0, 0, 0)
-        Button3.Size = New Size(243, 51)
-        Button3.TabIndex = 4
-        Button3.Text = "Products"
-        Button3.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button3.UseVisualStyleBackColor = True
+        BTNPRODUCTS.FlatAppearance.BorderColor = Color.White
+        BTNPRODUCTS.FlatAppearance.BorderSize = 0
+        BTNPRODUCTS.FlatAppearance.MouseDownBackColor = Color.DarkBlue
+        BTNPRODUCTS.FlatStyle = FlatStyle.Flat
+        BTNPRODUCTS.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BTNPRODUCTS.ForeColor = Color.White
+        BTNPRODUCTS.Image = My.Resources.Resources.Products
+        BTNPRODUCTS.ImageAlign = ContentAlignment.MiddleLeft
+        BTNPRODUCTS.Location = New Point(-1, 281)
+        BTNPRODUCTS.Name = "BTNPRODUCTS"
+        BTNPRODUCTS.Padding = New Padding(10, 0, 0, 0)
+        BTNPRODUCTS.Size = New Size(243, 51)
+        BTNPRODUCTS.TabIndex = 4
+        BTNPRODUCTS.Text = "Products"
+        BTNPRODUCTS.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNPRODUCTS.UseVisualStyleBackColor = True
         ' 
-        ' Button7
+        ' BTNREPORTS
         ' 
-        Button7.FlatAppearance.BorderColor = Color.White
-        Button7.FlatAppearance.BorderSize = 0
-        Button7.FlatAppearance.MouseDownBackColor = Color.DarkBlue
-        Button7.FlatStyle = FlatStyle.Flat
-        Button7.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button7.ForeColor = Color.White
-        Button7.Image = My.Resources.Resources.Reports
-        Button7.ImageAlign = ContentAlignment.MiddleLeft
-        Button7.Location = New Point(-1, 500)
-        Button7.Name = "Button7"
-        Button7.Padding = New Padding(10, 0, 0, 0)
-        Button7.Size = New Size(243, 51)
-        Button7.TabIndex = 4
-        Button7.Text = "Reports"
-        Button7.TextAlign = ContentAlignment.MiddleLeft
-        Button7.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button7.UseVisualStyleBackColor = True
+        BTNREPORTS.FlatAppearance.BorderColor = Color.White
+        BTNREPORTS.FlatAppearance.BorderSize = 0
+        BTNREPORTS.FlatAppearance.MouseDownBackColor = Color.DarkBlue
+        BTNREPORTS.FlatStyle = FlatStyle.Flat
+        BTNREPORTS.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BTNREPORTS.ForeColor = Color.White
+        BTNREPORTS.Image = My.Resources.Resources.Reports
+        BTNREPORTS.ImageAlign = ContentAlignment.MiddleLeft
+        BTNREPORTS.Location = New Point(-1, 509)
+        BTNREPORTS.Name = "BTNREPORTS"
+        BTNREPORTS.Padding = New Padding(10, 0, 0, 0)
+        BTNREPORTS.Size = New Size(243, 51)
+        BTNREPORTS.TabIndex = 4
+        BTNREPORTS.Text = "Reports"
+        BTNREPORTS.TextAlign = ContentAlignment.MiddleLeft
+        BTNREPORTS.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNREPORTS.UseVisualStyleBackColor = True
         ' 
-        ' Button5
+        ' BTNCUSTOMERPROF
         ' 
-        Button5.FlatAppearance.BorderColor = Color.White
-        Button5.FlatAppearance.BorderSize = 0
-        Button5.FlatAppearance.MouseDownBackColor = Color.DarkBlue
-        Button5.FlatStyle = FlatStyle.Flat
-        Button5.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button5.ForeColor = Color.White
-        Button5.Image = My.Resources.Resources.Customer_Profile
-        Button5.ImageAlign = ContentAlignment.MiddleLeft
-        Button5.Location = New Point(0, 386)
-        Button5.Name = "Button5"
-        Button5.Padding = New Padding(10, 0, 0, 0)
-        Button5.Size = New Size(243, 51)
-        Button5.TabIndex = 4
-        Button5.Text = "Customer Profile"
-        Button5.TextAlign = ContentAlignment.MiddleLeft
-        Button5.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button5.UseVisualStyleBackColor = True
+        BTNCUSTOMERPROF.FlatAppearance.BorderColor = Color.White
+        BTNCUSTOMERPROF.FlatAppearance.BorderSize = 0
+        BTNCUSTOMERPROF.FlatAppearance.MouseDownBackColor = Color.DarkBlue
+        BTNCUSTOMERPROF.FlatStyle = FlatStyle.Flat
+        BTNCUSTOMERPROF.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BTNCUSTOMERPROF.ForeColor = Color.White
+        BTNCUSTOMERPROF.Image = My.Resources.Resources.Customer_Profile
+        BTNCUSTOMERPROF.ImageAlign = ContentAlignment.MiddleLeft
+        BTNCUSTOMERPROF.Location = New Point(0, 395)
+        BTNCUSTOMERPROF.Name = "BTNCUSTOMERPROF"
+        BTNCUSTOMERPROF.Padding = New Padding(10, 0, 0, 0)
+        BTNCUSTOMERPROF.Size = New Size(243, 51)
+        BTNCUSTOMERPROF.TabIndex = 4
+        BTNCUSTOMERPROF.Text = "Customer Profile"
+        BTNCUSTOMERPROF.TextAlign = ContentAlignment.MiddleLeft
+        BTNCUSTOMERPROF.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNCUSTOMERPROF.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' BTNUSER
         ' 
-        Button2.FlatAppearance.BorderColor = Color.White
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatAppearance.MouseDownBackColor = Color.DarkBlue
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = Color.White
-        Button2.Image = My.Resources.Resources.People
-        Button2.ImageAlign = ContentAlignment.MiddleLeft
-        Button2.Location = New Point(0, 215)
-        Button2.Name = "Button2"
-        Button2.Padding = New Padding(10, 0, 0, 0)
-        Button2.Size = New Size(243, 51)
-        Button2.TabIndex = 4
-        Button2.Text = "User Account"
-        Button2.TextAlign = ContentAlignment.MiddleLeft
-        Button2.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button2.UseVisualStyleBackColor = True
+        BTNUSER.FlatAppearance.BorderColor = Color.White
+        BTNUSER.FlatAppearance.BorderSize = 0
+        BTNUSER.FlatAppearance.MouseDownBackColor = Color.DarkBlue
+        BTNUSER.FlatStyle = FlatStyle.Flat
+        BTNUSER.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BTNUSER.ForeColor = Color.White
+        BTNUSER.Image = My.Resources.Resources.People
+        BTNUSER.ImageAlign = ContentAlignment.MiddleLeft
+        BTNUSER.Location = New Point(0, 224)
+        BTNUSER.Name = "BTNUSER"
+        BTNUSER.Padding = New Padding(10, 0, 0, 0)
+        BTNUSER.Size = New Size(243, 51)
+        BTNUSER.TabIndex = 4
+        BTNUSER.Text = "User Account"
+        BTNUSER.TextAlign = ContentAlignment.MiddleLeft
+        BTNUSER.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNUSER.UseVisualStyleBackColor = True
         ' 
-        ' Button4
+        ' BTNADDSTOCKS
         ' 
-        Button4.FlatAppearance.BorderColor = Color.White
-        Button4.FlatAppearance.BorderSize = 0
-        Button4.FlatAppearance.MouseDownBackColor = Color.DarkBlue
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button4.ForeColor = Color.White
-        Button4.Image = My.Resources.Resources.Add__Stock
-        Button4.ImageAlign = ContentAlignment.MiddleLeft
-        Button4.Location = New Point(0, 329)
-        Button4.Name = "Button4"
-        Button4.Padding = New Padding(10, 0, 0, 0)
-        Button4.Size = New Size(243, 51)
-        Button4.TabIndex = 4
-        Button4.Text = "Add Stock"
-        Button4.TextAlign = ContentAlignment.MiddleLeft
-        Button4.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button4.UseVisualStyleBackColor = True
+        BTNADDSTOCKS.FlatAppearance.BorderColor = Color.White
+        BTNADDSTOCKS.FlatAppearance.BorderSize = 0
+        BTNADDSTOCKS.FlatAppearance.MouseDownBackColor = Color.DarkBlue
+        BTNADDSTOCKS.FlatStyle = FlatStyle.Flat
+        BTNADDSTOCKS.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BTNADDSTOCKS.ForeColor = Color.White
+        BTNADDSTOCKS.Image = My.Resources.Resources.Add__Stock
+        BTNADDSTOCKS.ImageAlign = ContentAlignment.MiddleLeft
+        BTNADDSTOCKS.Location = New Point(0, 338)
+        BTNADDSTOCKS.Name = "BTNADDSTOCKS"
+        BTNADDSTOCKS.Padding = New Padding(10, 0, 0, 0)
+        BTNADDSTOCKS.Size = New Size(243, 51)
+        BTNADDSTOCKS.TabIndex = 4
+        BTNADDSTOCKS.Text = "Add Stock"
+        BTNADDSTOCKS.TextAlign = ContentAlignment.MiddleLeft
+        BTNADDSTOCKS.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNADDSTOCKS.UseVisualStyleBackColor = True
         ' 
-        ' Button1
+        ' BTNDASHBOARD
         ' 
-        Button1.FlatAppearance.BorderColor = Color.White
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatAppearance.MouseDownBackColor = Color.DarkBlue
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.White
-        Button1.Image = My.Resources.Resources.Dashboard
-        Button1.ImageAlign = ContentAlignment.MiddleLeft
-        Button1.Location = New Point(0, 158)
-        Button1.Name = "Button1"
-        Button1.Padding = New Padding(10, 0, 0, 0)
-        Button1.Size = New Size(243, 51)
-        Button1.TabIndex = 4
-        Button1.Text = "Dashboard"
-        Button1.TextAlign = ContentAlignment.MiddleLeft
-        Button1.TextImageRelation = TextImageRelation.ImageBeforeText
-        Button1.UseVisualStyleBackColor = True
+        BTNDASHBOARD.FlatAppearance.BorderColor = Color.White
+        BTNDASHBOARD.FlatAppearance.BorderSize = 0
+        BTNDASHBOARD.FlatAppearance.MouseDownBackColor = Color.DarkBlue
+        BTNDASHBOARD.FlatStyle = FlatStyle.Flat
+        BTNDASHBOARD.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BTNDASHBOARD.ForeColor = Color.White
+        BTNDASHBOARD.Image = My.Resources.Resources.Dashboard
+        BTNDASHBOARD.ImageAlign = ContentAlignment.MiddleLeft
+        BTNDASHBOARD.Location = New Point(0, 167)
+        BTNDASHBOARD.Name = "BTNDASHBOARD"
+        BTNDASHBOARD.Padding = New Padding(10, 0, 0, 0)
+        BTNDASHBOARD.Size = New Size(243, 51)
+        BTNDASHBOARD.TabIndex = 4
+        BTNDASHBOARD.Text = "Dashboard"
+        BTNDASHBOARD.TextAlign = ContentAlignment.MiddleLeft
+        BTNDASHBOARD.TextImageRelation = TextImageRelation.ImageBeforeText
+        BTNDASHBOARD.UseVisualStyleBackColor = True
         ' 
-        ' Label6
+        ' LBLTYPE
         ' 
-        Label6.AutoSize = True
-        Label6.ForeColor = Color.White
-        Label6.Location = New Point(13, 124)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(43, 15)
-        Label6.TabIndex = 2
-        Label6.Text = "Admin"
+        LBLTYPE.AutoSize = True
+        LBLTYPE.ForeColor = Color.White
+        LBLTYPE.Location = New Point(13, 124)
+        LBLTYPE.Name = "LBLTYPE"
+        LBLTYPE.Size = New Size(43, 15)
+        LBLTYPE.TabIndex = 2
+        LBLTYPE.Text = "Admin"
         ' 
-        ' Label4
+        ' LBLNAME
         ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.ForeColor = SystemColors.ButtonHighlight
-        Label4.Location = New Point(12, 105)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(116, 21)
-        Label4.TabIndex = 2
-        Label4.Text = "Administrator"
+        LBLNAME.AutoSize = True
+        LBLNAME.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LBLNAME.ForeColor = SystemColors.ButtonHighlight
+        LBLNAME.Location = New Point(12, 105)
+        LBLNAME.Name = "LBLNAME"
+        LBLNAME.Size = New Size(116, 21)
+        LBLNAME.TabIndex = 2
+        LBLNAME.Text = "Administrator"
         ' 
         ' Label3
         ' 
@@ -309,6 +317,8 @@ Partial Class frmAdmin
         ' Panel2
         ' 
         Panel2.BackColor = Color.RoyalBlue
+        Panel2.Controls.Add(Label6)
+        Panel2.Controls.Add(Label4)
         Panel2.Controls.Add(Label5)
         Panel2.Controls.Add(Label7)
         Panel2.Controls.Add(Label8)
@@ -317,6 +327,28 @@ Partial Class frmAdmin
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(1047, 79)
         Panel2.TabIndex = 5
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = Color.White
+        Label6.Location = New Point(969, 29)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(12, 17)
+        Label6.TabIndex = 4
+        Label6.Text = "|"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.ForeColor = Color.White
+        Label4.Location = New Point(987, 29)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(48, 17)
+        Label4.TabIndex = 3
+        Label4.Text = "Admin"
         ' 
         ' Label5
         ' 
@@ -334,11 +366,11 @@ Partial Class frmAdmin
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.White
-        Label7.Location = New Point(891, 29)
+        Label7.Location = New Point(875, 30)
         Label7.Name = "Label7"
-        Label7.Size = New Size(144, 17)
+        Label7.Size = New Size(92, 17)
         Label7.TabIndex = 2
-        Label7.Text = "Administrator (Admin)"
+        Label7.Text = "Administrator"
         ' 
         ' Label8
         ' 
@@ -354,7 +386,7 @@ Partial Class frmAdmin
         ' Panel3
         ' 
         Panel3.BackColor = SystemColors.ControlLight
-        Panel3.Controls.Add(Label10)
+        Panel3.Controls.Add(LBLPAGE)
         Panel3.Controls.Add(Label9)
         Panel3.Dock = DockStyle.Top
         Panel3.Location = New Point(233, 79)
@@ -362,16 +394,16 @@ Partial Class frmAdmin
         Panel3.Size = New Size(1047, 35)
         Panel3.TabIndex = 6
         ' 
-        ' Label10
+        ' LBLPAGE
         ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.ForeColor = Color.Black
-        Label10.Location = New Point(79, 8)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(55, 17)
-        Label10.TabIndex = 2
-        Label10.Text = "Reports"
+        LBLPAGE.AutoSize = True
+        LBLPAGE.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LBLPAGE.ForeColor = Color.Black
+        LBLPAGE.Location = New Point(79, 8)
+        LBLPAGE.Name = "LBLPAGE"
+        LBLPAGE.Size = New Size(55, 17)
+        LBLPAGE.TabIndex = 2
+        LBLPAGE.Text = "Reports"
         ' 
         ' Label9
         ' 
@@ -384,13 +416,49 @@ Partial Class frmAdmin
         Label9.TabIndex = 2
         Label9.Text = "Home /"
         ' 
-        ' Panel4
+        ' PNLMAIN
         ' 
-        Panel4.BackColor = Color.DarkGray
-        Panel4.Location = New Point(252, 135)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(1016, 636)
-        Panel4.TabIndex = 8
+        PNLMAIN.BackColor = Color.DarkGray
+        PNLMAIN.Location = New Point(252, 135)
+        PNLMAIN.Name = "PNLMAIN"
+        PNLMAIN.Size = New Size(1016, 636)
+        PNLMAIN.TabIndex = 8
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.BackColor = Color.Transparent
+        Label10.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.ForeColor = SystemColors.ControlLight
+        Label10.Location = New Point(-12, 63)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(258, 17)
+        Label10.TabIndex = 5
+        Label10.Text = "__________________________________________________"
+        ' 
+        ' Label11
+        ' 
+        Label11.AutoSize = True
+        Label11.BackColor = Color.Transparent
+        Label11.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label11.ForeColor = SystemColors.ControlLight
+        Label11.Location = New Point(-15, 137)
+        Label11.Name = "Label11"
+        Label11.Size = New Size(258, 17)
+        Label11.TabIndex = 6
+        Label11.Text = "__________________________________________________"
+        ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.BackColor = Color.Transparent
+        Label12.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label12.ForeColor = SystemColors.ControlLight
+        Label12.Location = New Point(-15, 712)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(258, 17)
+        Label12.TabIndex = 7
+        Label12.Text = "__________________________________________________"
         ' 
         ' frmAdmin
         ' 
@@ -398,7 +466,7 @@ Partial Class frmAdmin
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1280, 786)
-        Controls.Add(Panel4)
+        Controls.Add(PNLMAIN)
         Controls.Add(Panel3)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
@@ -420,22 +488,27 @@ Partial Class frmAdmin
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents BTNDASHBOARD As Button
+    Friend WithEvents LBLTYPE As Label
+    Friend WithEvents LBLNAME As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents BTNLOGOUT As Button
+    Friend WithEvents BTNSETTINGS As Button
+    Friend WithEvents BTNSALES As Button
+    Friend WithEvents BTNPRODUCTS As Button
+    Friend WithEvents BTNREPORTS As Button
+    Friend WithEvents BTNCUSTOMERPROF As Button
+    Friend WithEvents BTNUSER As Button
+    Friend WithEvents BTNADDSTOCKS As Button
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents LBLPAGE As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Panel4 As Panel
+    Friend WithEvents PNLMAIN As Panel
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label11 As Label
 End Class
