@@ -35,7 +35,7 @@ Partial Class UCUserMngm
         TXTPASSWORD = New TextBox()
         Label6 = New Label()
         Label1 = New Label()
-        TextBox4 = New TextBox()
+        TXTLOGIN = New TextBox()
         Label4 = New Label()
         TXTUNAME = New TextBox()
         Label3 = New Label()
@@ -70,7 +70,7 @@ Partial Class UCUserMngm
         Panel2.Controls.Add(TXTPASSWORD)
         Panel2.Controls.Add(Label6)
         Panel2.Controls.Add(Label1)
-        Panel2.Controls.Add(TextBox4)
+        Panel2.Controls.Add(TXTLOGIN)
         Panel2.Controls.Add(Label4)
         Panel2.Controls.Add(TXTUNAME)
         Panel2.Controls.Add(Label3)
@@ -92,13 +92,14 @@ Partial Class UCUserMngm
         ' 
         ' BTNCANCEL
         ' 
+        BTNCANCEL.Enabled = False
         BTNCANCEL.FlatAppearance.BorderColor = Color.DarkGray
         BTNCANCEL.FlatStyle = FlatStyle.Flat
         BTNCANCEL.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         BTNCANCEL.Location = New Point(566, 296)
         BTNCANCEL.Name = "BTNCANCEL"
         BTNCANCEL.Size = New Size(117, 53)
-        BTNCANCEL.TabIndex = 1
+        BTNCANCEL.TabIndex = 10
         BTNCANCEL.Text = "Cancel"
         BTNCANCEL.UseVisualStyleBackColor = True
         ' 
@@ -113,7 +114,7 @@ Partial Class UCUserMngm
         BTNDELETE.Location = New Point(434, 296)
         BTNDELETE.Name = "BTNDELETE"
         BTNDELETE.Size = New Size(117, 53)
-        BTNDELETE.TabIndex = 1
+        BTNDELETE.TabIndex = 9
         BTNDELETE.Text = "Delete"
         BTNDELETE.TextImageRelation = TextImageRelation.ImageBeforeText
         BTNDELETE.UseVisualStyleBackColor = False
@@ -126,13 +127,14 @@ Partial Class UCUserMngm
         BTNEDIT.Location = New Point(302, 296)
         BTNEDIT.Name = "BTNEDIT"
         BTNEDIT.Size = New Size(117, 53)
-        BTNEDIT.TabIndex = 1
+        BTNEDIT.TabIndex = 8
         BTNEDIT.Text = "Edit"
         BTNEDIT.UseVisualStyleBackColor = True
         ' 
         ' BTNSAVE
         ' 
         BTNSAVE.BackColor = Color.FromArgb(CByte(0), CByte(192), CByte(0))
+        BTNSAVE.Enabled = False
         BTNSAVE.FlatAppearance.BorderSize = 0
         BTNSAVE.FlatStyle = FlatStyle.Flat
         BTNSAVE.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
@@ -141,7 +143,7 @@ Partial Class UCUserMngm
         BTNSAVE.Location = New Point(170, 296)
         BTNSAVE.Name = "BTNSAVE"
         BTNSAVE.Size = New Size(117, 53)
-        BTNSAVE.TabIndex = 1
+        BTNSAVE.TabIndex = 7
         BTNSAVE.Text = "Save"
         BTNSAVE.TextImageRelation = TextImageRelation.ImageBeforeText
         BTNSAVE.UseVisualStyleBackColor = False
@@ -157,7 +159,7 @@ Partial Class UCUserMngm
         BTNADD.Location = New Point(38, 296)
         BTNADD.Name = "BTNADD"
         BTNADD.Size = New Size(117, 53)
-        BTNADD.TabIndex = 1
+        BTNADD.TabIndex = 6
         BTNADD.Text = "Add"
         BTNADD.TextImageRelation = TextImageRelation.ImageBeforeText
         BTNADD.UseVisualStyleBackColor = False
@@ -170,8 +172,9 @@ Partial Class UCUserMngm
         TXTCONFIRMPW.ForeColor = Color.DimGray
         TXTCONFIRMPW.Location = New Point(38, 243)
         TXTCONFIRMPW.Name = "TXTCONFIRMPW"
+        TXTCONFIRMPW.PasswordChar = "*"c
         TXTCONFIRMPW.Size = New Size(414, 29)
-        TXTCONFIRMPW.TabIndex = 4
+        TXTCONFIRMPW.TabIndex = 3
         ' 
         ' Label2
         ' 
@@ -191,8 +194,9 @@ Partial Class UCUserMngm
         TXTPASSWORD.ForeColor = Color.DimGray
         TXTPASSWORD.Location = New Point(38, 174)
         TXTPASSWORD.Name = "TXTPASSWORD"
+        TXTPASSWORD.PasswordChar = "*"c
         TXTPASSWORD.Size = New Size(414, 29)
-        TXTPASSWORD.TabIndex = 4
+        TXTPASSWORD.TabIndex = 2
         ' 
         ' Label6
         ' 
@@ -214,16 +218,16 @@ Partial Class UCUserMngm
         Label1.TabIndex = 3
         Label1.Text = "Password"
         ' 
-        ' TextBox4
+        ' TXTLOGIN
         ' 
-        TextBox4.BackColor = Color.WhiteSmoke
-        TextBox4.BorderStyle = BorderStyle.FixedSingle
-        TextBox4.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        TextBox4.ForeColor = Color.DimGray
-        TextBox4.Location = New Point(517, 110)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(414, 29)
-        TextBox4.TabIndex = 4
+        TXTLOGIN.BackColor = Color.WhiteSmoke
+        TXTLOGIN.BorderStyle = BorderStyle.FixedSingle
+        TXTLOGIN.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        TXTLOGIN.ForeColor = Color.DimGray
+        TXTLOGIN.Location = New Point(517, 110)
+        TXTLOGIN.Name = "TXTLOGIN"
+        TXTLOGIN.Size = New Size(414, 29)
+        TXTLOGIN.TabIndex = 4
         ' 
         ' Label4
         ' 
@@ -244,7 +248,7 @@ Partial Class UCUserMngm
         TXTUNAME.Location = New Point(38, 110)
         TXTUNAME.Name = "TXTUNAME"
         TXTUNAME.Size = New Size(414, 29)
-        TXTUNAME.TabIndex = 4
+        TXTUNAME.TabIndex = 1
         ' 
         ' Label3
         ' 
@@ -288,8 +292,9 @@ Partial Class UCUserMngm
         ' 
         ' DGVUSERACCOUNT
         ' 
+        DGVUSERACCOUNT.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         DGVUSERACCOUNT.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DGVUSERACCOUNT.Location = New Point(14, 15)
+        DGVUSERACCOUNT.Location = New Point(14, 13)
         DGVUSERACCOUNT.Name = "DGVUSERACCOUNT"
         DGVUSERACCOUNT.Size = New Size(956, 189)
         DGVUSERACCOUNT.TabIndex = 0
@@ -324,7 +329,7 @@ Partial Class UCUserMngm
     Friend WithEvents TXTPASSWORD As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TXTLOGIN As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents BTNCANCEL As Button
     Friend WithEvents BTNDELETE As Button

@@ -437,9 +437,9 @@ Partial Class frmAdmin
         LBLPAGE.ForeColor = Color.Black
         LBLPAGE.Location = New Point(79, 8)
         LBLPAGE.Name = "LBLPAGE"
-        LBLPAGE.Size = New Size(55, 17)
+        LBLPAGE.Size = New Size(38, 17)
         LBLPAGE.TabIndex = 2
-        LBLPAGE.Text = "Reports"
+        LBLPAGE.Text = "Page"
         ' 
         ' Label9
         ' 
